@@ -12,25 +12,25 @@ lakshan814/myservice:1
 
 
 - Vérifier le cluster
-kubectl get nodes
+-- kubectl get nodes
 
 - Créer le deployment
-kubectl create deployment myservice --image=lakshan814/myservice:1
+-- kubectl create deployment myservice --image=lakshan814/myservice:1
 
 - Voir les pods
-kubectl get pods
+-- kubectl get pods
 
 - Détails d’un pod
-kubectl describe pod <pod-name>
+-- kubectl describe pod <pod-name>
 
 - Accès au container
-kubectl exec -it <pod-name> -- /bin/bash
+-- kubectl exec -it <pod-name> -- /bin/bash
 
 - Exposer le service
-kubectl expose deployment myservice --type=NodePort --port=8080
+-- kubectl expose deployment myservice --type=NodePort --port=8080
 
 - Voir les services
-kubectl get svc
+-- kubectl get svc
 
 - Accéder à l’application
-minikube service myservice --url
+-- minikube service myservice --url
