@@ -43,6 +43,12 @@ Récupérer l’adresse ingress -- kubectl get ingress
 Modifier le fichier hosts -- 127.0.0.1 myservice.info  
 Accéder à l’application -- http://myservice.info  
 
-Nettoyage  
-Supprimer le service -- kubectl delete service myservice  
-Supprimer le deployment -- kubectl delete deployment myservice  
+affichage : Hello Lakshan :) !!
+
+Create second deployment -- kubectl apply -f myservice2-deployment.yml  
+Create second service -- kubectl apply -f myservice2-service.yml  
+Update ingress -- kubectl apply -f ingress.yml  
+
+Accès sv2 -- http://myservice.info/app2  
+
+affichage sv2 : Hello second service
